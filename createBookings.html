@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bookings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="csv-data">
+            <h2>CSV Data</h2>
+            <div id="csv-table"></div>
+        </div>
+        <div class="user-input">
+            <h2>User Input</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="package-details">Package Details</label>
+                    <textarea id="package-details" rows="4" placeholder="Enter package details here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="booking-details">Booking Details</label>
+                    <textarea id="booking-details" rows="4" placeholder="Enter booking details here..."></textarea>
+                </div>
+                <button type="submit">Create Booking</button>
+            </form>
+        </div>
+    </div>
+    <script src="PapaParse-5.0.2/papaparse.min.js"></script>
+    <script src="importBookings.js"></script>
+    <script src="displayBookings.js"></script>
+</body>
+</html>
